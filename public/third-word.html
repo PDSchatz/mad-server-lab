@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    div#wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    form > input {
+      width: 100%;
+    }
+
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      color: red;
+    }
+
+    button {
+      border-radius: 0;
+      border: 3px solid red;
+      padding: 2vw;
+      font-size: 1.5vw;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <form action="/final" method="post">
+      <input type="text" name="adj" placeholder="adjective">
+      <button type="submit">show me a madlib!</button>
+    </form>
+  </div>
+</body>
+</html>
